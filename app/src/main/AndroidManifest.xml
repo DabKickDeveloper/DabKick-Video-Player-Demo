@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sample.sdk.dabkick.sampleappdkvp">
 
+    <!--required for streaming the online videos-->
     <uses-permission android:name="android.permission.INTERNET" />
 
 
@@ -15,7 +16,8 @@
         android:theme="@style/AppTheme">
 
 
-        <!-- required metadata for DabKick -->
+        <!-- required metadata for DabKick
+         includes developer id and developer key-->
         <meta-data
             android:name="com.dabkick.developer_id"
             android:value="@string/developer_id" />

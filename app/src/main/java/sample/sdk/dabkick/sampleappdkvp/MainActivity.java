@@ -18,7 +18,6 @@ import sample.sdk.dabkick.sampleappdkvp.MainViewVideos.MainVerticalListAdapter;
 import sample.sdk.dabkick.sampleappdkvp.PlayVideos.PlayerActivity;
 import sample.sdk.dabkick.sampleappdkvp.Slideshow.ImageModel;
 import sample.sdk.dabkick.sampleappdkvp.Slideshow.SlidingImage_Adapter;
-import sample.sdk.dabkick.sampleappdkvp.VideoDetails.VideoItemDetail;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,22 +38,16 @@ public class MainActivity extends AppCompatActivity {
         imageModelArrayList = new ArrayList<>();
         imageModelArrayList = populateList();
 
+        //registration for dabkick functionalities
         DabKickRegistration.newInstance().register(this);
         PlayerActivity.isRegistered = true;
 
         initViewPager();
 
+        //list of provided videos
         ListView categoriesList = (ListView)findViewById(R.id.categories_list);
         MainVerticalListAdapter adapter = new MainVerticalListAdapter(MainActivity.this);
         categoriesList.setAdapter(adapter);
-
-
-
-       /* VideoItemDetail videoItemDetail = new VideoItemDetail("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4", "", "", "", "");
-
-        Intent intent = new Intent(this, PlayerActivity.class);
-        PlayerActivity.detail = videoItemDetail;
-        startActivity(intent);*/
 
     }
 

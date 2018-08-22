@@ -21,15 +21,13 @@ import sample.sdk.dabkick.sampleappdkvp.R;
 import sample.sdk.dabkick.sampleappdkvp.VideoDetails.VideoItemDetail;
 import timber.log.Timber;
 
-//import at.huber.youtubeExtractor.VideoMeta;
-//import at.huber.youtubeExtractor.YtFile;
-
 public class PlayerActivity extends AppCompatActivity {
 
     public static VideoItemDetail detail;
     TextView title;
     TextView desc;
     ListView recomended;
+    //dabkick video view
     DkVideoView mVideoPlayer;
     public static boolean isRegistered = false;
 
@@ -38,6 +36,7 @@ public class PlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
 
+        //if not registered registering in this activity
         if(!isRegistered)
             DabKickRegistration.newInstance().register(this);
 
@@ -63,8 +62,9 @@ public class PlayerActivity extends AppCompatActivity {
                 @Override
                 public void onFinishedDownload(String fullStreamURL, boolean success) {
                     if(success){
-
+                        //set the current video url you wish to play in the dabkick player
                         mVideoPlayer.setMediaItem(fullStreamURL);
+                        //prepare the video along with 'true' for sending it to our backend/firebase
                         mVideoPlayer.prepare(true);
 
                     }else{
@@ -82,24 +82,22 @@ public class PlayerActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-//        if(mVideoPlayer != null)
-//            mVideoPlayer.onPauseCheck();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-//        if(mVideoPlayer != null)
-//            mVideoPlayer.onResumeCheck();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //release the player if not in use
         if(mVideoPlayer != null)
             mVideoPlayer.release();
     }
 
+    //added to ensure that you receive any videos added by your friend in the other end
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(NotifyStageVideoReceived event) {
 
@@ -117,12 +115,14 @@ public class PlayerActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        //register with event bus for recieving NotifyStageVideoReceived event
         EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        //unregister with event bus for NotifyStageVideoReceived event
         EventBus.getDefault().unregister(this);
     }
 
