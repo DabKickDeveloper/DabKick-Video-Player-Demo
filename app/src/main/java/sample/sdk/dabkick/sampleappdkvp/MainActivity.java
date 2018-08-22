@@ -165,14 +165,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-    @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        boolean handled = super.dispatchTouchEvent(ev);
-        if (mVideoPlayer != null && mVideoPlayer.gestureScanner != null)
-            handled = mVideoPlayer.gestureScanner.onTouchEvent(ev);
-        return handled;
-    }
-
     private ArrayList<ImageModel> populateList() {
 
         ArrayList<ImageModel> list = new ArrayList<>();
