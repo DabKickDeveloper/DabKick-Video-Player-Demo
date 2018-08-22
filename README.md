@@ -26,7 +26,7 @@ Figure 2 in Device 1 after selecting a video to play
                                       
                                       
                                       
-Clicking on the play button in the video controls should start playing the video, you can invite a friend/another user to 'Watch Together' by tapping on the watch together button provided on the right hand corner of the dabkick player. Upon tapping the button, a custom edit text appears which hints you to enter your name and proceed to tapping on the "Share an invite" option
+Clicking on the play button in the video controls should start playing the video, you can invite a friend/another user to 'Watch Together' by tapping on the watch together button provided on the right hand corner of the dabkick player. Upon tapping the button, a custom edit text appears which hints you to enter your name and proceed to tapping on the "Start inviting" option
  
 ![2](https://user-images.githubusercontent.com/13344744/44455364-7e69f080-a61b-11e8-8324-03bc529cf8a6.jpg)
   Figure 4 in Device 1. Tap on the Watch Together button
@@ -35,7 +35,7 @@ Clicking on the play button in the video controls should start playing the video
   
   
 ![3](https://user-images.githubusercontent.com/13344744/44455371-8033b400-a61b-11e8-900f-a02f52539088.jpg)
- Figure 5 in Device 1. Enter user name and tap on Share an invite.
+ Figure 5 in Device 1. Enter user name and tap on Start an invite.
                                     
                                     
  Upon the above step you should be able to see multiple options for sharing such as hangouts, email etc. Select any of the available options and send it to the desired friend. 
