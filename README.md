@@ -47,11 +47,7 @@ Clicking on the play button in the video controls should start playing the video
  Your friend will recieve the url on the other phone and upon clicking on the url the same video will start playing in both the devices in sync.
  
  You  can swipe up to chat with your friend as the video plays along on both ends.
- 
- ![chat_image](https://user-images.githubusercontent.com/13344744/44464342-28577600-a638-11e8-9b3c-55f3c388ea17.jpg)
-                                 
- Figure 7. Swipe up to chat while playing the video.
-                                   
+                                  
                                    
   You may either click on the back button of your android device or the "X" mark available on the left hand side of the device to exit the video player.
   
