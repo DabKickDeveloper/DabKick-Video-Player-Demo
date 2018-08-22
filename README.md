@@ -42,7 +42,7 @@ Clicking on the play button in the video controls should start playing the video
  
  
  ![hangouts](https://user-images.githubusercontent.com/13344744/44451096-53c66a80-a610-11e8-95d2-4d6f89aea5ef.jpg)
-                                   Figure 6 in Device 1. Select any of the available options.
+Figure 5 in Device 1. Select any of the available options.
  
  Your friend will recieve the url on the other phone and upon clicking on the url the same video will start playing in both the devices in sync.
  
