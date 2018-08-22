@@ -49,7 +49,7 @@ Clicking on the play button in the video controls should start playing the video
  You  can swipe up to chat with your friend as the video plays along on both ends.
                                   
                                    
-  You may either click on the back button of your android device or the "X" mark available on the left hand side of the device to exit the video player.
+  You may tap on the back button of your android device to exit the video player.
   
  # Supported Device
  
