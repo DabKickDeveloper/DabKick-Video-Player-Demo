@@ -7,7 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
-import com.dabkick.dkvideoplayer.publicsettings.DabkickRegistration;
+import com.dabkick.dkvideoplayer.publicsettings.DabKickRegistration;
 import com.viewpagerindicator.CirclePageIndicator;
 
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         imageModelArrayList = new ArrayList<>();
         imageModelArrayList = populateList();
 
-        DabkickRegistration.newInstance().register(this);
+        DabKickRegistration.newInstance().register(this);
         PlayerActivity.isRegistered = true;
 
         initViewPager();

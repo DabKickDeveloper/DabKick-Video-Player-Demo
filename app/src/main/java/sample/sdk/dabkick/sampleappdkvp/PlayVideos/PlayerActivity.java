@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.dabkick.dkvideoplayer.livesession.models.StageModel;
 import com.dabkick.dkvideoplayer.livesession.videoplayer.DkVideoView;
-import com.dabkick.dkvideoplayer.publicsettings.DabkickRegistration;
+import com.dabkick.dkvideoplayer.publicsettings.DabKickRegistration;
 import com.dabkick.dkvideoplayer.publicsettings.NotifyStageVideoReceived;
 
 import org.greenrobot.eventbus.EventBus;
@@ -39,7 +39,7 @@ public class PlayerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_player);
 
         if(!isRegistered)
-            DabkickRegistration.newInstance().register(this);
+            DabKickRegistration.newInstance().register(this);
 
         init();
     }
