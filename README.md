@@ -1,6 +1,9 @@
 # DabKick-Video-Player-Demo
 The main purpose of this sample application is to familiarize the users with the key functionalities of the video player.
 
+# Getting the compiled APK
+Download the pre-compiled APK to install in your Android device [here](https://www.dabkick.com/dkplayer/Assets/sample-app.apk).
+
 # Getting the code
 
 The source code for the sample app can be found in our [GitHub project](https://github.com/DabKickDeveloper/DabKick-Video-Player-Demo.git). If you haven’t already done so, clone the project into a local directory:
@@ -61,4 +64,4 @@ Figure 5 in Device 1. Select any of the available options.
  
  # Integration steps
  
- You can integrate our Dabkick video player into your own app. To do this follow the [integration documentation](https://www.dabkick.com/video_player/Firework/)
+ You can integrate our Dabkick video player into your own app. To do this follow the [integration documentation](https://www.dabkick.com/dkplayer/)
