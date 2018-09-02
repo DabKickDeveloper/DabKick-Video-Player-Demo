@@ -2,7 +2,7 @@
 The main purpose of this sample application is to familiarize the users with the key functionalities of the video player.
 
 # Getting the compiled APK
-Download the pre-compiled APK to install in your Android device [here](https://www.dabkick.com/dkplayer/Assets/sample-app.apk).
+Download the pre-compiled APK to install in your Android device [here](http://bit.ly/DKVPSampleApp).
 
 # Getting the code
 
